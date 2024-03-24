@@ -1,18 +1,23 @@
 {% load static %}
 
 <header>
-
+    
     <div class="header">
-        <img src="{% static 'images/logo-icon.png' %}" alt="Beyond Lubricants Logo" class="logo">
+        <a href="{% url 'home' %}">
+            <img src="{% static 'images/logo-icon.png' %}" alt="Beyond Lubricants Logo" class="logo">
+        </a>
+
+        {% if request.resolver_match.url_name == 'home' %}
         <div class="search-box">
             <input type="text" name="search" placeholder="Search...">
             <button type="submit">Search</button>
         </div>
+        {% endif %}
     
 
         <div class="header-right">
             <div class="login">
-                <a href="#" >
+                <a href="{% url 'login' %}" >
                     <img src="{% static 'images/profile-icon.png' %}" alt="Login profile">
                 </a>
             </div>
