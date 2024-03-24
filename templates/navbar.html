@@ -1,0 +1,28 @@
+{% load static %}
+
+<header>
+
+    <div class="header">
+        <img src="{% static 'images/logo-icon.png' %}" alt="Beyond Lubricants Logo" class="logo">
+        <div class="search-box">
+            <input type="text" name="search" placeholder="Search...">
+            <button type="submit">Search</button>
+        </div>
+    
+
+        <div class="header-right">
+            <div class="login">
+                <a href="#" >
+                    <img src="{% static 'images/profile-icon.png' %}" alt="Login profile">
+                </a>
+            </div>
+
+            <div class="cart">
+                <a href="#">
+                    <img src="{% static 'images/cart-icon.png' %}" alt="Shopping cart">
+                </a>
+            </div>
+        </div>
+    </div>
+
+</header>

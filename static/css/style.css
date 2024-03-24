@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid white;
+    padding: 20px;
+    margin-top: 0;
+    border-color: rgb(12, 73, 230);
+}
+
+.header {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px rgb(221, 226, 228);
+    padding: 20px;
+    margin-top: 0;
+    background-color: rgb(244, 240, 240);
+}
+
+.logo {
+    width: auto;
+    max-width: 200px; /* Adjust the maximum width of the logo */
+    height: auto;
+}
+
+.search-box {
+    display: flex;
+}
+
+.search-box input[type="text"] {
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ccc;
+    border-color: rgb(12, 73, 230);
+
+}
+
+.search-box button {
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    border-color: rgb(12, 73, 230);
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif; /* Change the font for price */
+    font-weight: 10; 
+}
+
+.device {
+    padding: 10px;
+    font-family: 'Roboto', sans-serif; /* Change the font for price */
+    font-weight: 10; 
+    
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+footer {
+    color: black;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; /* Change the font for price */
+    font-weight: 10; 
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+}
+
+.cart{
+    margin-left: 20px;
+    display: inline-flex;
+    width: 46px;
+    height: auto;
+  
+}
+
+.login{
+    width: 45px;
+    height: auto;
+}
+
+.item-list {
+    display: grid;
+    grid-template-columns: repeat(4, auto); /* Four columns */
+    gap: 20px; /* Gap between items */
+    justify-content: space-between; /* Distribute columns evenly */
+    margin: 0 auto; /* Center the item list */
+    max-width: 1200px; /* Maximum width of the item list */
+
+}
+
+
+.item {
+    position: relative;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column; /* Stack item content vertically */
+    justify-content: center; /* Center item content vertically */
+    align-items: center; /* Center item content horizontally */
+    transition: transform 0.3s ease;
+    border: 1px solid transparent; 
+}
+
+
+.thin-line {
+  
+    width: 1200px;
+    border: none; /* Remove default border */
+    height: 1px; /* Set height of the line */
+    background-color: rgb(12, 73, 230); /* Set color of the line */
+    margin-top: 80px; /* Add margin top */
+    margin-bottom: 80px;
+}
+
+
+
+.item h3,.item p {
+    font-family: 'Roboto', sans-serif; /* Change the font for item name */
+    font-weight: 10; /* Use a thin font weight */
+}
+
+.item:hover{
+    box-shadow: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(12, 73, 230); /* Add border style */
+    transform: scale(1.05);
+}
+
+.add-to-cart-button {
+    display: none; /* Hide the button by default */
+    position: absolute;
+    bottom: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.item:hover .add-to-cart-button {
+    display: inline-block; /* Show button on hover */
+}
+
+
+.item:hover .details {
+    display: flex; /* Show the item details on hover */
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
